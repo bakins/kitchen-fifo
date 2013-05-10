@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.description   = "Kitchen::Driver::FIFO - A Test Kitchen Driver for Project-FIFO"
   gem.summary       = gem.description
   gem.homepage      = "https://github.com/bakins/kitchen-fifo/"
-  gem.license       = "Apache 2.0
+  gem.license       = "Apache 2.0"
   gem.files         = `git ls-files`.split($/)
   gem.executables   = []
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
