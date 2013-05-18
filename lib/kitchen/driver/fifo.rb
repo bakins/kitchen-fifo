@@ -72,10 +72,11 @@ module Kitchen
         id = server["uuid"]
         while true do
           s = connection.vms.get(id)
+          break if s['state'] == "running"
           print "."
           sleep 10
-          break if s['state'] == "running"
         end
+        sleep 10
       end
 
     end
